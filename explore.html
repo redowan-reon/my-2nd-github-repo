@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://media.istockphoto.com/id/1173422519/photo/outer-space-universe-nebula-stars-star-cluster-blue-purple-pink-bright-astronomy-science.jpg?s=612x612&w=0&k=20&c=EbnAjTmCHibkOry_Ip5j2wVFjQSu6WVRNbgklxRton0=);
+            background-size: cover;
+          
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-image: url(https://media.istockphoto.com/id/1173422519/photo/outer-space-universe-nebula-stars-star-cluster-blue-purple-pink-bright-astronomy-science.jpg?s=612x612&w=0&k=20&c=EbnAjTmCHibkOry_Ip5j2wVFjQSu6WVRNbgklxRton0=);
+            background-size: cover;
+            
+          
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        form {
+            margin-top: 10px;
+        }
+        form input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .solar-system {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .planet {
+            margin: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+        .planet span {
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1em;
+        }
+        #sun {
+            background: radial-gradient(circle, #ffdd00, #ff9900);
+            width: 150px;
+            height: 150px;
+        }
+        #mercury { background-color: #a9a9a9; }
+        #venus { background-color: #c4a484; }
+        #earth { background: radial-gradient(circle, #2e8b57, #1e90ff); }
+        #mars { background-color: #b22222; }
+        #jupiter { background-color: #d2691e; }
+        #saturn { background-color: #deb887; }
+        #uranus { background-color: #5f9ea0; }
+        #neptune { background-color: #4682b4; }
+        .planet-description {
+            text-align: left;
+            margin: 20px;
+            padding: 10px;
+           
+            border-radius: 5px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Solar System</h1>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </header>
+
+    <!-- Solar System Info Section -->
+    <section class="solar-system">
+        <div class="planet" id="sun">
+            <span>Sun</span>
+        </div>
+        <div class="planet" id="mercury">
+            <span>Mercury</span>
+        </div>
+        <div class="planet" id="venus">
+            <span>Venus</span>
+        </div>
+        <div class="planet" id="earth">
+            <span>Earth</span>
+        </div>
+        <div class="planet" id="mars">
+            <span>Mars</span>
+        </div>
+        <div class="planet" id="jupiter">
+            <span>Jupiter</span>
+        </div>
+        <div class="planet" id="saturn">
+            <span>Saturn</span>
+        </div>
+        <div class="planet" id="uranus">
+            <span>Uranus</span>
+        </div>
+        <div class="planet" id="neptune">
+            <span>Neptune</span>
+        </div>
+    </section>
+
+    <!-- Planet Details Section -->
+    <section class="planet-description">
+        <h2>About Our Planets</h2>
+        <ul>
+            <li><strong>Mercury:</strong> Closest to the Sun, extreme temperature fluctuations, no moons.</li>
+            <li><strong>Venus:</strong> Known for its thick atmosphere and surface temperatures hotter than Mercury's.</li>
+            <li><strong>Earth:</strong> The only planet known to support life, with one moon.</li>
+            <li><strong>Mars:</strong> Known as the "Red Planet", has the largest volcano in the solar system.</li>
+            <li><strong>Jupiter:</strong> The largest planet, has a giant storm called the Great Red Spot.</li>
+            <li><strong>Saturn:</strong> Famous for its spectacular ring system.</li>
+            <li><strong>Uranus:</strong> Rotates on its side, has faint rings.</li>
+            <li><strong>Neptune:</strong> Known for its striking blue color and strong winds.</li>
+        </ul>
+    </section>
+</body>
+</html>
